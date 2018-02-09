@@ -1,12 +1,13 @@
 @echo off
-cd "D:\mining\mining3\Sumo Easy Miner"
-start sumominer
-:loop
-	set option=
+set option=
 	set /p option=Type 1 to end.
 	if '%option%'=='1' goto end
 	if not '%option%'=='1' goto ready
 	:ready
+	cd "D:\mining\mining3\Sumo Easy Miner"
+start sumominer
+
+:loop
 	cd "D:\mining\mining3\Claymore\Claymore" 
 	REM enter pathway
 	start startetn

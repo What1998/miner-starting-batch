@@ -1,10 +1,10 @@
 @echo off
-:loop
 	set option=
 	set /p option=Type 1 to end.
 	if '%option%'=='1' goto end
 	if not '%option%'=='1' goto ready
 	:ready
+:loop
 	cd "D:\mining\mining3\Claymore\Claymore" 
 	REM enter pathway
 	start startetn
